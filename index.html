@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кубинская Сальва (Casino) — Энергия Острова Свободы</title>
+    <style>
+        :root {
+            --primary: #FF4500; /* Яркий кубинский оранжево-красный */
+            --dark: #1A1A1A;
+            --light: #F9F9F9;
+            --accent: #FFD700;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* Главный баннер (Hero) */
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), 
+                        url('https://unsplash.com') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent);
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 400px;
+        }
+
+        /* Кнопки действия */
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(255, 69, 0, 0.4);
+            transition: transform 0.2s;
+            touch-action: manipulation; /* Оптимизация клика на мобильных */
+        }
+
+        .btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Основной контент */
+        .container {
+            padding: 40px 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 5px;
+        }
+
+        /* Особенности стиля */
+        .features {
+            list-style: none;
+        }
+
+        .features li {
+            background: white;
+            margin-bottom: 12px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+        }
+
+        .features li::before {
+            content: "💃";
+            margin-right: 15px;
+            font-size: 1.3rem;
+        }
+
+        /* Блок Руэды */
+        .rueda-box {
+            background-color: var(--dark);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .rueda-box h3 {
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+
+        /* Подвал */
+        footer {
+            background-color: var(--dark);
+            color: #888;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <h1>Salsa Cubana</h1>
+        <p>Почувствуй истинный ритм улиц Гаваны и свободу движений в стиле Казино!</p>
+        <a href="#join" class="btn">Хочу танцевать!</a>
+    </header>
+
+    <!-- Главный блок -->
+    <div class="container">
+        
+        <section>
+            <h2>Что такое сальса касино?</h2>
+            <p><strong>Кубинская сальса (Casino)</strong> — это не просто танец, это живое общение, флирт и море солнца. В отличие от линейных стилей, кубинская сальса танцуется по кругу. Движения плавные, круговые, наполненные мощной афро-кубинской пластикой.</p>
+        </section>
+
+        <section>
+            <h2>Почему стоит попробовать?</h2>
+            <ul class="features">
+                <li><strong>Легкий старт:</strong> Базовые шаги интуитивны и под силу каждому.</li>
+                <li><strong>Общение:</strong> На вечеринках принято постоянно меняться партнерами.</li>
+                <li><strong>Драйв и кардио:</strong> Отличная замена скучному фитнесу.</li>
+            </ul>
+        </section>
+
+        <section class="rueda-box">
+            <h3>Rueda de Casino</h3>
+            <p>Уникальная фишка стиля — танец в общем кругу, где все пары одновременно выполняют синхронные команды одного лидера (кантора). Это невероятно весело!</p>
+        </section>
+
+        <section id="join" style="text-align: center; padding-top: 20px;">
+            <h2>Запишись на занятие</h2>
+            <p style="margin-bottom: 20px;">Оставь заявку и погрузись в культуру Кубы уже на этой неделе!</p>
+            <!-- Замените номер телефона на реальный -->
+            <a href="tel:+79991234567" class="btn">📞 Позвонить нам</a>
+        </section>
+
+    </div>
+
+    <!-- Подвал -->
+    <footer>
+        <p>© 2026 Школа Кубинской Сальсы. Танцуй сердцем!</p>
+    </footer>
+
+</body>
+</html>
